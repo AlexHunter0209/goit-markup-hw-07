@@ -24,10 +24,10 @@ ul {
     margin: 0;
 }
 
-.section{
+/* .section{
     padding-top: 120px;
     padding-bottom: 120px;
-}
+} */
 
 body {
     font-family: "Roboto", sans-serif;
@@ -213,8 +213,6 @@ ul {
     letter-spacing: 0.03em;
     color: var(--logo-color);
 }
-
-
 
 .header-link {
     font-weight: 600;
