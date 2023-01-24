@@ -74,7 +74,7 @@ body {
 }
 
 @media screen and (max-width:767.98px) {
-    .page-header-wrapper.section-content-wrapper {
+    .header-container.section-content-wrapper {
             max-width: 100%;
         }
 }
@@ -772,6 +772,8 @@ body {
     .footer-content {
         row-gap: 72px;
         column-gap: 24px;
+        /* justify-content: flex-start; */
+        /* margin-left: 108px; */
     }
 }
 
@@ -840,6 +842,7 @@ body {
 }
 
 .footer-second-part-title {
+    justify-content: center;
     width: 208px;
     font-weight: 600;
     font-size: 16px;
@@ -939,7 +942,7 @@ body {
     outline: none;
     padding: 8px 16px;
     min-width: 264px;
-    min-height: 40px;
+    /* min-height: 40px; */
     background-color: var(--primary-text-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -974,7 +977,7 @@ body {
 }
 
 
-/* _______PORTFOLIO_____ */
+/*======================== SECOND PAGE ======================== */
 .main-portfolio {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -994,16 +997,18 @@ body {
     }
 }
 
-/* _____FILTERS_____ */
+/*======================== FILTERS ========================  */
 
 .filters-btn-wraper {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
     margin-bottom: 48px;
 }
 
 @media screen and (min-width: 768px) {
     .filters-btn-wraper {
+        /* display: flex; */
         align-items: center;
         justify-content: center;
         margin-bottom: 64px;
@@ -1058,8 +1063,7 @@ body {
     background-color: var(--primary-third-color);
 }
 
-/* _____EXAMPLES_____ */
-
+/*======================== Examples ========================  */
 .examples-list {
     flex-wrap: wrap;
     row-gap: 48px; 
@@ -1081,6 +1085,8 @@ body {
 
 .examples-item {
     flex-basis: calc((100% - 0px)/1);
+    /* margin-right: 24px;
+    margin-bottom: 48px; */
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1172,7 +1178,7 @@ body {
     transform: translate(0, 0);
 }
 
-/* _____MODAL WINDOW_____ */
+/*======================== MODAL WINDOW ========================  */
 .backdrop {
     position: fixed;
     z-index: 100;
@@ -1258,7 +1264,10 @@ body {
     margin-bottom: 16px;
 }
 
-/* _____FORM WINDOW_____ */
+
+/*======================== /MODAL WINDOW ========================  */
+
+/*======================== FORM WINDOW ========================  */
 .modal-item {
     width: 360px;
     height: 24px;
@@ -1422,8 +1431,10 @@ body {
     background-color: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+/*======================== /FORM WINDOW ========================  */
 
-/* _____MOBILE MENU_____ */
+
+/*======================== MOBILE MENU ========================  */
 .menu {
     display: flex;
     padding: 0;
@@ -1438,6 +1449,7 @@ body {
 
 .menu .link {
     padding: 10px;
+    /* color: inherit; */
     text-decoration: none;
 }
 
@@ -1472,6 +1484,11 @@ body {
         display: none;
     }
 }
+
+/* .menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+} */
 
 .menu-container {
     display: flex;
@@ -1588,3 +1605,5 @@ body {
     align-items: center;
     gap: 56px;
 }
+
+/*======================== /MOBILE MENU ========================  */
